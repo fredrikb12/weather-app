@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "Redressed";
+    src: url(./fonts/Redressed-Regular.ttf) format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Redressed";
+  font-size: 2rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #ddd;
+}
+
+form {
+  align-self: center;
+  justify-self: center;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+input {
+  width: 100%;
+  background: url(./images/search.svg) no-repeat scroll 7px 7px;
+  background-size: 20px;
+
+  padding: 10px;
+  padding-left: 30px;
+  border-radius: 8px;
+  border: 1px solid rgb(112, 112, 112);
+  margin-bottom: 10px;
+  outline: none;
+}
+
+button {
+  width: 40%;
+  padding: 5px 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-wrapper {
+  display: flex;
+}
+
+.temp-wrapper {
+  display: none;
+  border-right: 1px solid rgb(83, 83, 83);
+}
+
+.bottom-wrapper > * {
+  padding: 5px 10px;
+}
+
+p.temp {
+  font-size: 4rem;
+}
+
+.degrees {
+    font-size: inherit;
+}
+
+.condition-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 1.6rem;
+}
+
+.content-wrapper {
+  display: none;
+  border-radius: 12px;
+  border: 4px solid rgb(240, 167, 119);
+  padding: 15px;
+  background-color: rgb(205, 191, 255);
+}
+
+.description {
+    font-size: 1.3rem;
+    align-self: flex-end;
+}
+
+h1.header {
+    font-size: 3.2rem;
+    color: rgb(26, 39, 11);
+}
+
+.button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
